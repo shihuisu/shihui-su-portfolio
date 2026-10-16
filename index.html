@@ -114,7 +114,7 @@ window.PORTFOLIO = {
     },
     {
       "id": "seen",
-      "title": "Dreams Quest",
+      "title": "Dream Sequence",
       "iconType": "dream",
       "projectTitle": "SEEN",
       "category": "films",
@@ -265,7 +265,7 @@ function renderRoute(){
  }
 }
 function navigate(dest,id=''){const hash=dest==='home'?'#home':id?'#studio/'+encodeURIComponent(id):'#studio';if(location.hash===hash)renderRoute();else location.hash=hash}
-const dreamIcon=button('Dreams Quest','dream',()=>project(data.projects.find(p=>p.id==='seen')));dreamIcon.classList.add('featured-project');document.querySelector('#desktop').append(button('Film','film',()=>folder('films')),dreamIcon,button('Studio Works','camera',()=>navigate('studio')),button('About Me','polaroid',about),button('Contact','mail',contact),button('Resume','resume',()=>material({id:'resume',title:'Resume',kind:'image',url:data.resumeImage})));
+const dreamIcon=button('Dream Sequence','dream',()=>project(data.projects.find(p=>p.id==='seen')));dreamIcon.classList.add('featured-project');document.querySelector('#desktop').append(button('Film','film',()=>folder('films')),dreamIcon,button('Studio Works','camera',()=>navigate('studio')),button('About Me','polaroid',about),button('Contact','mail',contact),button('Resume','resume',()=>material({id:'resume',title:'Resume',kind:'image',url:data.resumeImage})));
 document.querySelector('#studio-icons').append(
  button('Week 1 Flashback','camera',()=>project(data.projects.find(p=>p.id==='flashback-sequence'))),
  button('Week 2 Photo-roman','shortfilm',()=>project(data.projects.find(p=>p.id==='one-minute'))),
